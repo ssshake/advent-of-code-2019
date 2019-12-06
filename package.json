@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ssshake/advent-of-code-2019#readme",
   "dependencies": {
+    "chalk": "^3.0.0",
     "jest": "^24.9.0"
   }
 }

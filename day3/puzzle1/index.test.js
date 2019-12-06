@@ -5,8 +5,11 @@ test('Route has length of 6', () => {
         a: "R8,U5,L5,D3".split(","),
         b: "U7,R6,D4,L4".split(",")
     }
+    
+    const processor = new Processor(paths, 20)
 
-    const processor = new Processor(paths)
+    processor.makeGrid();
+
 
     expect(processor.process()).toBe(6);
 })
