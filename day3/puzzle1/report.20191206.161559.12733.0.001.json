@@ -1,0 +1,447 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191206.161559.12733.0.001.json",
+    "dumpEventTime": "2019-12-06T16:15:59Z",
+    "dumpEventTimeStamp": "1575666959664",
+    "processId": 12733,
+    "cwd": "/Users/rich/git/Personal/advent2019/day3/puzzle1",
+    "commandLine": [
+      "node",
+      "index.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "18.0.0",
+    "osVersion": "Darwin Kernel Version 18.0.0: Wed Aug 22 20:13:40 PDT 2018; root:xnu-4903.201.2~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz",
+        "speed": 3100,
+        "user": 5123100,
+        "nice": 0,
+        "sys": 3344830,
+        "idle": 14537190,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz",
+        "speed": 3100,
+        "user": 4062710,
+        "nice": 0,
+        "sys": 1795920,
+        "idle": 17145740,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz",
+        "speed": 3100,
+        "user": 5338930,
+        "nice": 0,
+        "sys": 2929150,
+        "idle": 14736300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz",
+        "speed": 3100,
+        "user": 3852790,
+        "nice": 0,
+        "sys": 1637590,
+        "idle": 17513990,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "a4:5e:60:ce:ef:07",
+        "address": "fe80::1074:b647:19f3:b0a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "a4:5e:60:ce:ef:07",
+        "address": "192.168.231.186",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "b2:ae:0d:b8:f4:c2",
+        "address": "fe80::b0ae:dff:feb8:f4c2",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::6d1e:c800:d148:9bb1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      }
+    ],
+    "host": "Gentoo.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000010014da5c",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010007e8a3",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100176267",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100176203",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002fa2b5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002fb984",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002f8857",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002f683d",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100301f54",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100301fcf",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002cd9a9",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::RootIndex, int, v8::internal::Object, v8::internal::AllocationType) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001004380da",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::ConvertElementsWithCapacity(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::FixedArrayBase>, v8::internal::ElementsKind, unsigned int, unsigned int, unsigned int) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001004368a6",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001005d1cf4",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010092fbd9",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    },
+    {
+      "pc": "0x000004685e244896",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00000001008b0224",
+      "symbol": "Builtins_InterpreterEntryTrampoline [/Users/rich/.nvm/versions/node/v12.13.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2196996096,
+    "totalCommittedMemory": 2194609864,
+    "usedMemory": 2120014432,
+    "availableMemory": 34465440,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 31915384,
+        "capacity": 16759808,
+        "used": 153136,
+        "available": 16606672
+      },
+      "old_space": {
+        "memorySize": 1945600,
+        "committedMemory": 1895704,
+        "capacity": 1941392,
+        "used": 1891208,
+        "available": 50184
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 178080,
+        "capacity": 153920,
+        "used": 153920,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 308576,
+        "capacity": 210720,
+        "used": 210720,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 2160230400,
+        "committedMemory": 2160230400,
+        "capacity": 2117569600,
+        "used": 2117569600,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 15.5773,
+    "kernelCpuSeconds": 1.89957,
+    "cpuConsumptionPercent": 218.461,
+    "maxRss": 2318028242944,
+    "pageFaults": {
+      "IORequired": 2,
+      "IONotRequired": 562670
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "MANPATH": "/Users/rich/.nvm/versions/node/v12.13.0/share/man:/sw/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Library/Frameworks/Mono.framework/Versions/Current/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/sw/lib/perl5/5.18.2/man",
+    "rvm_bin_path": "/Users/rich/.rvm/bin",
+    "TERM_PROGRAM": "iTerm.app",
+    "XDG_DATA_HOME": "/Users/rich/.local/share",
+    "NVM_CD_FLAGS": "",
+    "GEM_HOME": "/Users/rich/.rvm/gems/ruby-2.2.10",
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash",
+    "CLICOLOR": "1",
+    "IRBRC": "/Users/rich/.rvm/rubies/ruby-2.2.10/.irbrc",
+    "TMPDIR": "/var/folders/pd/tndzzt8555jf38thc7rpyjyr0000gn/T/",
+    "PERL5LIB": "/sw/lib/perl5:/sw/lib/perl5/darwin",
+    "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.ro71Akf4GA/Render",
+    "TERM_PROGRAM_VERSION": "3.2.4beta3",
+    "OLDPWD": "/Users/rich/git/Personal/advent2019/day3",
+    "MY_RUBY_HOME": "/Users/rich/.rvm/rubies/ruby-2.2.10",
+    "TERM_SESSION_ID": "w0t0p0:14F432A7-A5BC-4AE0-807F-53CB245A7A07",
+    "NVM_DIR": "/Users/rich/.nvm",
+    "USER": "rich",
+    "COMMAND_MODE": "unix2003",
+    "rvm_path": "/Users/rich/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.uL6QJNvXE7/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x52",
+    "XDG_CONFIG_DIRS": "/sw/etc/xdg",
+    "LSCOLORS": "GxFxCxDxBxegedabagaced",
+    "rvm_prefix": "/Users/rich",
+    "PATH": "/Users/rich/.rvm/gems/ruby-2.2.10/bin:/Users/rich/.rvm/gems/ruby-2.2.10@global/bin:/Users/rich/.rvm/rubies/ruby-2.2.10/bin:/Users/rich/.nvm/versions/node/v12.13.0/bin:/sw/bin:/sw/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/rich/.gem/ruby/2.0.0/bin:/Users/rich/.composer/vendor/bin:/Users/rich/Library/Android/sdk/platform-tools/:/Users/rich/.rvm/bin:/Users/rich/.pulumi/bin",
+    "PWD": "/Users/rich/git/Personal/advent2019/day3/puzzle1",
+    "HOMEBREW_GITHUB_API_TOKEN": "1f2df250a4068c5017c4de962c8864ef40fb3d88",
+    "LANG": "en_CA.UTF-8",
+    "ITERM_PROFILE": "Default",
+    "XPC_FLAGS": "0x0",
+    "XPC_SERVICE_NAME": "0",
+    "rvm_version": "1.29.9 (latest)",
+    "SHLVL": "1",
+    "HOME": "/Users/rich",
+    "COLORFGBG": "12;8",
+    "XDG_CONFIG_HOME": "/Users/rich/.config",
+    "XDG_CACHE_HOME": "/Users/rich/.cache",
+    "ITERM_SESSION_ID": "w0t0p0:14F432A7-A5BC-4AE0-807F-53CB245A7A07",
+    "LOGNAME": "rich",
+    "GEM_PATH": "/Users/rich/.rvm/gems/ruby-2.2.10:/Users/rich/.rvm/gems/ruby-2.2.10@global",
+    "XDG_DATA_DIRS": "/sw/share",
+    "NVM_BIN": "/Users/rich/.nvm/versions/node/v12.13.0/bin",
+    "INFOPATH": "/sw/share/info:/sw/info:/usr/share/info",
+    "XDG_RUNTIME_DIR": "/var/folders/pd/tndzzt8555jf38thc7rpyjyr0000gn/C/",
+    "DISPLAY": "/private/tmp/com.apple.launchd.uikYBNE7sR/org.macosforge.xquartz:0",
+    "RUBY_VERSION": "ruby-2.2.10",
+    "SECURITYSESSIONID": "186a9",
+    "COLORTERM": "truecolor",
+    "_": "/Users/rich/.nvm/versions/node/v12.13.0/bin/node"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1418,
+      "hard": 2128
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/rich/.nvm/versions/node/v12.13.0/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}

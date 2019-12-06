@@ -1,12 +1,12 @@
 const chalk = require('chalk');
 
 const processor = class {
-    constructor(paths, gridSize = 1000) {
+    constructor(paths, gridSize = 200) {
         this.paths = paths
         this.grid = []
         this.gridSize = gridSize
         this.origin = this.gridSize / 2
-        
+        this.intersections = []
     }
 
     makeGrid(){
@@ -20,10 +20,10 @@ const processor = class {
 
         this.grid[this.origin][this.origin] = "O"
 
-        console.log(this.origin)
     }
 
     resetXY(){
+        console.log(this.origin)
         this.X = this.origin
         this.Y = this.origin
     }
@@ -34,9 +34,12 @@ const processor = class {
         path.map((instruction) => {
             const tempArr = instruction.split('')
             const direction = tempArr.shift()
-            const units = tempArr.join()
+            const units = tempArr.join('')
+            // console.log(units, direction)
 
-            for (let i = 0; i <= units; i++){
+            for (let i = 0; i < units; i++){
+
+                
                 switch(direction){
                     case "U":
                         this.Y -= 1;
@@ -52,8 +55,19 @@ const processor = class {
                         break;                            
                 }
 
+                // if (this.Y > this.gridSize || this.X > this.gridSize || this.Y < 0 || this.X < 0){
+                //     return
+                // }
+
                 if (this.grid[this.Y][this.X] === otherLabel){
                     this.grid[this.Y][this.X] = 'X'
+                    // console.log('---------')
+                    // console.log(this.X, this.Y, this.origin)
+                    // console.log( (this.X - this.origin),  (this.Y - this.origin))
+
+                    const manhattan = Math.abs((this.X - this.origin)) + Math.abs((this.Y - this.origin))
+
+                    this.intersections.push(manhattan)
                 } else {
                     this.grid[this.Y][this.X] = label
                 }
@@ -67,13 +81,16 @@ const processor = class {
         this.drawPath('B', 'A', this.paths.b)
 
         this.grid.map((row) => {
-            console.log(row.toString()
-                .replace(/A/g, chalk.blue('A'))
-                .replace(/B/g, chalk.green('B'))
-                .replace(/X/g, chalk.red('X'))
-                .replace(/O/g, chalk.yellow('O'))
-            )
+            // console.log(row.toString()
+            //     .replace(/A/g, chalk.blue('A'))
+            //     .replace(/B/g, chalk.green('B'))
+            //     .replace(/X/g, chalk.red('X'))
+            //     .replace(/O/g, chalk.yellow('O'))
+            // )
         })
+        this.intersections = this.intersections.sort()
+        console.log(this.intersections)
+        return this.intersections
     }
 }
 
