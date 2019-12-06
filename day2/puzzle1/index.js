@@ -34,7 +34,7 @@ const process = () => {
         const output = intcodes[getOffset(3)];
 
         switch(opCode){
-            case 1:
+            case OPCODES.SUM:
                 intcodes[output] = sum(a,b);
                 break;
             case OPCODES.MULTIPLY:
